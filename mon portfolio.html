@@ -1,0 +1,150 @@
+    <!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body> 
+        <header>
+            <section id="navbar">
+                <nav id="nav">
+                    <div id="portfolio">
+                        <h1>PORTFO<span>LIO</span></h1>
+                    </div>
+                    <div id="accueil">
+                        <ul class="liste-boutons">
+                            <li class="boutons"><a href="#reg_apropos">À propos de moi</a></li>   
+                            <li class="boutons"><a href="#timeline">Compétences</a></li>                         
+                            <li class="boutons"><a href="#proj">Mes Projets</a></li>                                                    
+                            <li class="boutons"><a href="#contactmoi">Contact</a></li>                           
+                            <li class="login"><a href="#Log In">Log In</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <div class="btn">
+            <img src="./up-arrow-circle-solid-24.png">
+          </div>
+        <section id="page_centrale">
+            <div class="presentation">
+                <p>Bonjour, mon nom est</p>
+                <h1 id="kilian">Oulekhiari <span>Kilian</span></h1>
+                <h2>Je suis Developpeur Web Junior</h2>
+                <img id="moi" src="moi.jpg">
+            </div>
+        </section>
+        <section id="page_secondaire">
+            <div class="apropos">
+                <h3 id="reg_apropos">À propos de moi</h3>
+                <h4 id="devapr">Développeur Web <span>Junior</span></h4>
+                <p id="texte">Actuellement en BTS Services informatiques aux organisations au Lycée Saint-Vincent à Senlis, 
+                    <br>j'apprends différents languageS tels que le HTML/CSS, PHP, C# et bien d'autres.
+                    <br>J'ai réalisé plusieurs projets et maquettes, je suis encore qu'un jeune développeur 
+                    <br>mais j'espère apprendre plein d'autres languages.
+                </p>
+            </div>
+        </section>
+        <section id="page_trois">
+            <div id="timeline">
+                <div class="container left-container">
+                    <img class="image" src="images/vvhtml.png">
+                    <div class="text-box">
+                        <h2>HTML</h2>
+                        <small>09/2022</small>
+                        <p>Apprentissage du language HTML</p>
+                        <span class="left-container-arrox"></span>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <img class="image" src="images/css.png">
+                    <div class="text-box">
+                        <h2>CSS</h2>
+                        <small>09/2022</small>
+                        <p>Apprentissage du language CSS</p>
+                        <span class="right-container-arrox"></span>
+                    </div>
+                </div>
+                <div class="container left-container">
+                    <img class="image" src="images/c.png">
+                    <div class="text-box">
+                        <h2>C#</h2>
+                        <small>12/2022</small>
+                        <p>Apprentissage du language C# </p>
+                        <span class="left-container-arrox"></span>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <img class="image" src="images/vjava.png">
+                    <div class="text-box">
+                        <h2>JS</h2>
+                        <small>12/2022</small>
+                        <p>Apprentissage du language JS</p>
+                        <span class="right-container-arrox"></span>
+                    </div>
+                </div>
+                <div class="container left-container">
+                    <img class="image" src="images/php.png">
+                    <div class="text-box">
+                        <h2>PHP</h2>
+                        <small>01/2023</small>
+                        <p>Apprentissage du language PHP</p>
+                        <span class="left-container-arrox"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page_quatre">
+            <div class="projets">
+                <center><h2 id="proj">Mes <span>Projets</span></h2></section></center>
+            </div>
+            <div class="portfolio-projets">
+                <div class="row">
+                    <img src="projet1.PNG">
+                    <div class="ligne">
+                        <h5>Aspect Visuel</h5>
+                        <p>Voici le projet disney que j'ai effectué en HTML, CSS ainsi que du JS pour les animations tels que le carousel
+                        </p>
+                        <!-- <a href="#"><img class="i" src="bx-link-external.png"></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-text" id="contactmoi">
+                <h2>Contactez <span>Moi!</span></h2>
+                <div class="list">
+                    <li><a href="#">0684604130</li>
+                    <li><a href="#">k.oulekhiari@gmail.com</li>
+                    <li><a href="#">PARIS</li>
+                </div>
+            </div>
+            <div class="contact-icons">
+                    <a href="https://www.instagram.com/kilian_olkr/?hl=fr"><img class="logo" src="./instagram-logo.png"></a>
+            </div>
+            <div class="formulaire">
+                <form action="">
+                    <input type="name" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre adresse mail" required>
+                    <input type="" placeholder="Votre numéro de téléphone" required>
+                    <textarea name=""   id="" cols="35" rows="10" placeholder="Comment puis je vous aider?" required></textarea>
+                    <input id="envoyer" type="submit" value="Envoyer" class="submit" required>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
+<script>
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
+</script>
